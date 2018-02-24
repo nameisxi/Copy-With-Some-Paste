@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Copy With Some Paste",
+    "description": "This extension allows the user to paste text to a box and operate multiple clipboards.",
+    "version": "1.0",
+  
+    "browser_action": {
+      "default_icon": "chrome-icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Copy With Some Paste"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "clipboardRead"
+    ],
+
+    "background": {
+      "scripts": ["oncopy.js"],
+      "persistent": false
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+}
