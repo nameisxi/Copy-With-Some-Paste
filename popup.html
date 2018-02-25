@@ -30,46 +30,38 @@
       - Policy documentation[1] for details and explanation.
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
+	-->
 	<script src="popup.js"></script>
 </head>
 
 <body>
 	<h1>Copy With Some Paste</h1>
-	<!--<div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-	  </select>-->
 	<h2>Paste Box</h2>
 	<form>
 		<br>
-		<textarea rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea'></textarea>
+		<textarea id="pasteBox" rows='3' data-min-rows='3' placeholder='Paste Box'></textarea>
 	</form>
+	<button id="pasteSyncButton">Sync</button>
 
 	<h2>Clipboards</h2>
 	<form>
-		<input type="text" id="cliboard1" value="Empty" readonly>
+		<input type="text" id="clipboard1" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="cliboard2" value="Empty" readonly>
+		<input type="text" id="clipboard2" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="cliboard3" value="Empty" readonly>
+		<input type="text" id="clipboard3" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="cliboard4" value="Empty" readonly>
+		<input type="text" id="clipboard4" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="cliboard5" value="Empty" readonly>
+		<input type="text" id="clipboard5" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 </body>
