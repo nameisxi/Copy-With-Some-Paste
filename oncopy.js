@@ -1,5 +1,3 @@
-console.log("oncopy.js background scipt is running...");
-
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     chrome.runtime.sendMessage({ event: "copy" }, () => {
         var clipboardContents = JSON.stringify(request.contents);
@@ -9,28 +7,17 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 function addClipboard(clipboard) {
-    var clipboards = this.getClipboards();
-
-    if (clipboards == undefined || clipboards.length === 0) {
-        clipboards = [];
-        clipboards.push(clipboard);
-    } else {
-        clipboards.unshift(clipboard);
-        if (clipboards.length > 5) {
-            clipboards.pop();
-        }
-    }
-
-    chrome.storage.sync.set({ 'clipboards': clipboards }, () => {
-        console.log('Clipboard saved');
-    });
-}
-
-function getClipboards() {
-    var fetchedClipboards;
     chrome.storage.sync.get("clipboards", (items) => {
-        fetchedClipboards = items.clipboards;
+        var clipboards = items.clipboards;
+        if (clipboards == null || clipboards == undefined || clipboards.length === 0) {
+            clipboards = [];
+            clipboards.push(clipboard);
+        } else {
+            clipboards.unshift(clipboard);
+            if (clipboards.length > 5) {
+                clipboards.pop();
+            }
+        }
+        chrome.storage.sync.set({ 'clipboards': clipboards });
     });
-
-    return fetchedClipboards;
 }
