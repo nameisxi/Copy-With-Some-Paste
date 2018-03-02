@@ -1,9 +1,4 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
 
 <head>
@@ -38,23 +33,23 @@
 
 	<h2>Clipboards</h2>
 	<form>
-		<input type="text" id="clipboard1" value="Empty" readonly>
+		<input type="text" class="clipboards" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="clipboard2" value="Empty" readonly>
+		<input type="text" class="clipboards" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="clipboard3" value="Empty" readonly>
+		<input type="text" class="clipboards" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="clipboard4" value="Empty" readonly>
+		<input type="text" class="clipboards" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<form>
-		<input type="text" id="clipboard5" value="Empty" readonly>
+		<input type="text" class="clipboards" value="Empty" readonly>
 		<button aria-label="Copy to clipboard"></button>
 	</form>
 	<script src="popup.js"></script>
