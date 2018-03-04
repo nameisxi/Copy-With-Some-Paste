@@ -3,55 +3,58 @@
 
 <head>
 	<title>Copy With Some Paste</title>
-	<!--<style type="text/css">
-		body {
-			margin: 10px;
-			white-space: nowrap;
+	<style type="text/css">
+		#paste-area {
+			background-color: blue
 		}
 
-		h1 {
-			font-size: 15px;
+		#clipboards-area {
+			background-color: blueviolet;
 		}
 
-		#container {
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
+		::selection {
+			background-color: transparent;
 		}
-	</style>-->
-	
+	</style>
 </head>
 
 <body>
 	<h1>Copy With Some Paste</h1>
 	<h2>Paste Box</h2>
-	<form>
-		<br>
-		<textarea id="pasteBox" rows='3' data-min-rows='3' placeholder='Paste Box'></textarea>
-	</form>
-	<button id="pasteSyncButton">Sync</button>
+
+	<div id="paste-area">
+		<form>
+			<br>
+			<textarea id="pasteBox" rows='3' data-min-rows='3' placeholder='Paste Box'></textarea>
+		</form>
+		<button id="pasteSyncButton">Sync</button>
+		<button id="pasteCopyButton">Copy</button>
+		<button id="pasteClearButton">Clear</button>
+	</div>
 
 	<h2>Clipboards</h2>
-	<form>
-		<input type="text" class="clipboards" value="Empty" readonly>
-		<button aria-label="Copy to clipboard"></button>
-	</form>
-	<form>
-		<input type="text" class="clipboards" value="Empty" readonly>
-		<button aria-label="Copy to clipboard"></button>
-	</form>
-	<form>
-		<input type="text" class="clipboards" value="Empty" readonly>
-		<button aria-label="Copy to clipboard"></button>
-	</form>
-	<form>
-		<input type="text" class="clipboards" value="Empty" readonly>
-		<button aria-label="Copy to clipboard"></button>
-	</form>
-	<form>
-		<input type="text" class="clipboards" value="Empty" readonly>
-		<button aria-label="Copy to clipboard"></button>
-	</form>
+	<div id="clipboards-area">
+		<form>
+			<input type="text" class="clipboards" placeholder="Empty" readonly>
+			<button class="clipboard-copy-buttons">Copy</button>
+		</form>
+		<form>
+			<input type="text" class="clipboards" placeholder="Empty" readonly>
+			<button class="clipboard-copy-buttons">Copy</button>
+		</form>
+		<form>
+			<input type="text" class="clipboards" placeholder="Empty" readonly>
+			<button class="clipboard-copy-buttons">Copy</button>
+		</form>
+		<form>
+			<input type="text" class="clipboards" placeholder="Empty" readonly>
+			<button class="clipboard-copy-buttons">Copy</button>
+		</form>
+		<form>
+			<input type="text" class="clipboards" placeholder="Empty" readonly>
+			<button class="clipboard-copy-buttons">Copy</button>
+		</form>
+	</div>
 	<script src="popup.js"></script>
 </body>
 

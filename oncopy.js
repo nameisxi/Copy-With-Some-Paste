@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     chrome.runtime.sendMessage({ event: "copy" }, () => {
-        var clipboardContents = JSON.stringify(request.contents);
+        var clipboardContents = JSON.parse(JSON.stringify(request.contents));
         addClipboard(clipboardContents);
     });
     sendResponse("Message has been processed by background page");

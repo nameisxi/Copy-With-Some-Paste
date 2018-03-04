@@ -6,10 +6,19 @@
     "version": "1.0",
   
     "browser_action": {
-      "default_icon": "chrome-icon.png",
+      "default_icon": "icons/icon-logo-19.png",
       "default_popup": "popup.html",
       "default_title": "Copy With Some Paste"
     },
+
+    "icons": { 
+      "16": "icons/icon-logo-16.png",
+      "19": "icons/icon-logo-19.png",
+      "38": "icons/icon-logo-38.png",
+      "48": "icons/icon-logo-48.png",
+     "128": "icons/big-logo-128.png" 
+    },
+
     "permissions": [
       "activeTab",
       "storage",
