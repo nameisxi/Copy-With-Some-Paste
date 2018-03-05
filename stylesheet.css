@@ -1,0 +1,59 @@
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2F038D;
+}
+
+h2 {
+    color: #D73A3A;
+}
+
+#paste-area {
+    /*background-color: blue*/
+}
+
+#pasteBox {
+    border-radius: 3px;
+    background: transparent;
+    resize: vertical;
+    margin-top: -15px;
+    shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+}
+
+#pasteBox:focus {
+    outline: none !important;
+    border: 1px solid #D73A3A;
+    caret-color: #2F038D;
+}
+
+.clipboards {
+    border-color: #2F038D;
+    margin-top: 5px;
+}
+
+.clipboard-copy-buttons {
+    background-color: #ffffff;
+    border: solid #2F038D;
+    color: #2F038D;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+.clipboard-copy-buttons:focus {
+    outline: none !important;
+    border: 1px solid #D73A3A;
+}
+
+::selection {
+    background-color: transparent;
+}
