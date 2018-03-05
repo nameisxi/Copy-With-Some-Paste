@@ -1,3 +1,4 @@
+![github-big-logo](https://user-images.githubusercontent.com/34348677/36947499-5e750be2-1fd5-11e8-846d-b6f5a716495f.png)
 <h3>Copy With Some Paste</h3>
 <p>Currently supported features:</p>
 <ul>
