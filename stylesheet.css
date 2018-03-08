@@ -20,7 +20,7 @@ h2 {
 }
 
 #pasteBox {
-    border-radius: 3px;
+    border: 1px solid #2F038D;
     background: transparent;
     resize: vertical;
     margin-top: -15px;
@@ -34,22 +34,30 @@ h2 {
 }
 
 .clipboards {
-    border-color: #2F038D;
+    border: solid 1px #2F038D;
     margin-top: 5px;
 }
 
-.clipboard-copy-buttons {
+.clipboard-copy-buttons, .pasteButtons {
     background-color: #ffffff;
-    border: solid #2F038D;
+    border: solid 1px #2F038D;
     color: #2F038D;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-left: -4px;
     cursor: pointer;
 }
 
+.clipboard-copy-buttons {
+    margin-left: -4px;
+}
+
 .clipboard-copy-buttons:focus {
+    outline: none !important;
+    border: 1px solid #D73A3A;
+}
+
+.pasteButtons:focus {
     outline: none !important;
     border: 1px solid #D73A3A;
 }
