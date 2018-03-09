@@ -8,12 +8,16 @@ hr {
 }
 
 h1 {
+    font-family: 'Mina', sans-serif;
     color: #2F038D;
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 0px;
 }
 
 h2 {
+    font-family: 'Roboto', sans-serif;
     color: #D73A3A;
+    margin-bottom: 4px;
 }
 
 #pasteBox {

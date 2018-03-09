@@ -44,7 +44,6 @@ chrome.runtime.onMessage.addListener(() => {
 
 var inputFieldCopyButtons = document.getElementById("clipboards-area").getElementsByClassName("clipboard-copy-buttons");
 var inputFields = document.getElementById("clipboards-area").getElementsByClassName("clipboards");
-
 for (let i = 0; i < inputFields.length; i++) {
 	inputFieldCopyButtons[i].addEventListener('click', () => {
 		inputFields[i].select();
