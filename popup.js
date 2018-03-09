@@ -42,9 +42,11 @@ chrome.runtime.onMessage.addListener(() => {
 	});
 });
 
-var inputFields = document.getElementById("clipboards-area").getElementsByClassName("clipboard-copy-buttons");
+var inputFieldCopyButtons = document.getElementById("clipboards-area").getElementsByClassName("clipboard-copy-buttons");
+var inputFields = document.getElementById("clipboards-area").getElementsByClassName("clipboards");
+
 for (let i = 0; i < inputFields.length; i++) {
-	inputFields[i].addEventListener('click', () => {
+	inputFieldCopyButtons[i].addEventListener('click', () => {
 		inputFields[i].select();
 		document.execCommand("Copy");
 	});

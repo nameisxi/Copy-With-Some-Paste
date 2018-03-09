@@ -2,7 +2,7 @@
     "manifest_version": 2,
   
     "name": "Copy With Some Paste",
-    "description": "This extension allows the user to paste text to a box and operate multiple clipboards.",
+    "description": "This extension allows the user to paste text to a universal account specific paste box and operate multiple clipboards.",
     "version": "1.0",
   
     "browser_action": {
@@ -32,7 +32,7 @@
 
     "content_scripts": [
       {
-        "matches": ["http://*/*", "https://*/*"],
+        "matches": ["<all_urls>"],
         "js": ["contentScript.js"]
       }
     ]

@@ -9,43 +9,57 @@ hr {
 
 h1 {
     color: #2F038D;
+    font-size: 20px;
 }
 
 h2 {
     color: #D73A3A;
 }
 
-#paste-area {
-    /*background-color: blue*/
-}
-
 #pasteBox {
     border: 1px solid #2F038D;
+    color: #2F038D;
     background: transparent;
     resize: vertical;
     margin-top: -15px;
     shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
 }
 
+textarea::placeholder {
+    color: #2F038D;  
+}
+
 #pasteBox:focus {
     outline: none !important;
+    color: #D73A3A;
     border: 1px solid #D73A3A;
     caret-color: #2F038D;
 }
 
 .clipboards {
+    color: #2F038D;
     border: solid 1px #2F038D;
     margin-top: 5px;
 }
 
 .clipboard-copy-buttons, .pasteButtons {
-    background-color: #ffffff;
+    background-color: #2F038D;
     border: solid 1px #2F038D;
-    color: #2F038D;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+}
+
+.pasteButtons {
+    width: 52px;
+}
+
+.pasteButtons:focus {
+    outline: none !important;
+    background-color: #D73A3A;
+    border: 1px solid #D73A3A;
 }
 
 .clipboard-copy-buttons {
@@ -54,11 +68,7 @@ h2 {
 
 .clipboard-copy-buttons:focus {
     outline: none !important;
-    border: 1px solid #D73A3A;
-}
-
-.pasteButtons:focus {
-    outline: none !important;
+    background-color: #D73A3A;
     border: 1px solid #D73A3A;
 }
 
