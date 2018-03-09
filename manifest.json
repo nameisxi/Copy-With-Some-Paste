@@ -3,7 +3,7 @@
   
     "name": "Copy With Some Paste",
     "description": "This extension allows the user to paste text to a universal account specific paste box and operate multiple clipboards.",
-    "version": "1.0",
+    "version": "0.0.0.1",
   
     "browser_action": {
       "default_icon": "icons/icon-logo-19.png",
