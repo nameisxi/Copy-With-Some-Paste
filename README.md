@@ -1,14 +1,4 @@
 ![github-big-logo](https://user-images.githubusercontent.com/34348677/36947499-5e750be2-1fd5-11e8-846d-b6f5a716495f.png)
 <h3>Copy With Some Paste</h3>
-<p>Currently supported features:</p>
-<ul>
-  <li>"Paste Box" that syncs between accounts, making it easy to paste between devices</li>
-  <li>Five "Clipboards" that hold the latest clipboard contents (also syncs between multiple devices)</li>
-</ul>
-
-<p>TODO:</p>
-<ul>
-  <li>Add copy functionality to the buttons next to the read only input fields</li>
-  <li>Apply some CSS</li>
-  <li>Once the extension is more polished, I'll add a feature that makes the count of clipboards dynamic, not static as it's now</li>
-</ul>
+<p>Allows users to paste text into the universal "Paste Box" that syncs between Google accounts and allows users to manage multiple clipboards.</p>
+<img width="640" alt="screenshot-copy-with-some-paste" src="https://user-images.githubusercontent.com/34348677/37253335-24a758ca-2539-11e8-9fc3-46586c651a80.png">
